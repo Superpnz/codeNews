@@ -77,7 +77,7 @@ const PostForm = ({ post, action }: PostFormProps) => {
             )}
 
             {/* Кнопки */}
-            <div className="post-form__action">
+            <div className="post-form__actions">
                 <button className="button post-form__submit" type="submit" disabled={pending}>
                     {pending ? "Сохраняем..." : "Сохранить"}
                 </button>
