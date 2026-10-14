@@ -704,8 +704,19 @@ textarea {
     }
 
     .site-footer {
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .site-footer .meta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-footer__links {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .reading-column {
@@ -772,9 +783,20 @@ textarea {
         padding-top: 28px;
     }
 
+    .post-form__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
     .post-form__actions .button {
+        display: flex;
         width: 100%;
+        min-width: 0;
         max-width: none;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .post-page__cover {
